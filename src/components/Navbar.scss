@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Pacifico";
+    src:url("../../public/fonts/Pacifico.ttf")
+    }
+.Navbar{
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20px 10px;
+    box-sizing: border-box;
+    transition: all .5s ease-in;
+    .logo{
+      color:var(--primary);
+      font-family:'Pacifico';
+      text-transform: capitalize ;
+      font-size:30px;
+    }
+
+    .burger-menu{
+        span{
+        display: block;
+        width:40px;
+        margin-bottom: 6px;
+        height:4px;
+        border-radius:2px;
+        background-color: #fff;
+        }
+        span:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+.scrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    max-width: 100%;;
+    padding-bottom:0px
+}
